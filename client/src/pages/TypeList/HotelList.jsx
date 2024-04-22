@@ -16,7 +16,7 @@ const HotelList =()=>{
     const [options,setOptions]=useState(location.state.options)
     const [min,setMin]=useState(undefined)
     const [max,setMax]=useState(undefined)
-    const {data,loading,error,reFetch}=useFetch(`https://api-uqjw.onrender.com/hotels?city=${destination}&type=Hotel&min=${min || 0 }&max=${max || 999999999}`)
+    const {data,loading,error,reFetch}=useFetch(`http://localhost:8800/api/hotels?city=${destination}&type=Hotel&min=${min || 0 }&max=${max || 999999999}`)
     const handleClick=()=>{
         reFetch();
     }

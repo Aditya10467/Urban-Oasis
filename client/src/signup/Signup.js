@@ -66,7 +66,7 @@ const Signup = () => {
         img: url,
       };
       const res = await axios.post(
-        "https://api-uqjw.onrender.com/auth/register",newUser
+        "http://localhost:8800/api/auth/register",newUser
       );
       dispatch({ type: "REGISTER_SUCCESS", payload:    res.data.details });
       

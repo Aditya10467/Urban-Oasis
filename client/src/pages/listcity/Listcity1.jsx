@@ -15,7 +15,7 @@ const Listcity1 = () => {
   
 
   
-  const {data,loading,error,reFetch}=useFetch("https://api-uqjw.onrender.com/hotels?city=Hyderabad")
+  const {data,loading,error,reFetch}=useFetch("http://localhost:8800/api/hotels?city=Hyderabad")
 
   const handleClick = () => {
     reFetch();

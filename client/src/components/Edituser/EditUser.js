@@ -42,7 +42,7 @@ try{
 
     
     const res = await axios.put(
-        `https://api-uqjw.onrender.com/users/update/${user._id}`,
+        `http://localhost:8800/api/users/update/${user._id}`,
         credentials1
         );   
      

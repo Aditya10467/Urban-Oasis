@@ -11,7 +11,7 @@ const Datatable = ({columns}) => {
   const location = useLocation();
   const path = location.pathname.split("/")[1];
   const [list, setList] = useState([]);
-  const { data, loading, error } = useFetch(`https://api-uqjw.onrender.com/${path}`);
+  const { data, loading, error } = useFetch(`http://localhost:8800/api/${path}`);
 
   useEffect(()=>{
 
@@ -23,7 +23,7 @@ const Datatable = ({columns}) => {
 
   const handleDelete =async (id) => {
     try {
-      await axios.delete(`https://api-uqjw.onrender.com/${path}/${id}`);
+      await axios.delete(`http://localhost:8800/api/${path}/${id}`);
      setList(list.filter((item) => item._id !== id));
     } catch (err) {}
   };

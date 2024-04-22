@@ -38,7 +38,7 @@ const MailList=()=>{
         try {
           
           const res = await axios.put(
-            "https://api-uqjw.onrender.com/contact/create",
+            "http://localhost:8800/api/contact/create",
             credentials
           );
           
