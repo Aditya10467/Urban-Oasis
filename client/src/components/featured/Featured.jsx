@@ -4,7 +4,7 @@ import "./Featured.css"
 import {CircularProgress} from '@material-ui/core'
 const Featured=()=>{
     const navigate=useNavigate();
-    const {data,loading,error}=useFetch("http://localhost:8800/api/hotels/countByCity?cities=Hyderabad,Mumbai,Banglore")
+    const {data,loading,error}=useFetch("https://api-uqjw.onrender.com/hotels/countByCity?cities=Hyderabad,Mumbai,Banglore")
 
     const handleclick=()=>{
         navigate("/hotels/hyderabad")

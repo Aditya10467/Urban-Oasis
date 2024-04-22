@@ -60,7 +60,7 @@ const NewHotel = () => {
         photos: list,
       };
 
-      await axios.post("http://localhost:8800/api/hotels", newhotel);
+      await axios.post("https://api-uqjw.onrender.com/hotels", newhotel);
     } catch (err) {console.log(err)}
     alert("Uploaded..")
     navigate("/hotels")
