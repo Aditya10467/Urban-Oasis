@@ -50,5 +50,10 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://api-uqjw.onrender.com/api/"
+  "proxy": "https://api-uqjw.onrender.com/api/",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
