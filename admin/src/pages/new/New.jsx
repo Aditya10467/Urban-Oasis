@@ -41,7 +41,7 @@ const New = ({ inputs, title }) => {
         img: url,
       };
 
-      await axios.post("http://localhost:8800/api/auth/register", newUser);
+      await axios.post("https://api-uqjw.onrender.com/api/auth/register", newUser);
       
     } catch (err) {
       console.log(err);

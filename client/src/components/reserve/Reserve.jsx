@@ -13,7 +13,7 @@ const Reserve = ({ setOpen, hotelId }) => {
   const [pr, setpr] = useState("");
   
  
-  const { data } = useFetch(`http://localhost:8800/api/hotels/room/${hotelId}`);
+  const { data } = useFetch(`https://api-uqjw.onrender.com/api/hotels/room/${hotelId}`);
  
   const {dates,options}=useContext(SearchContext)
   const MILLISECONDS_PER_DAY=1000*60*60*24;
@@ -89,7 +89,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     try {
       await Promise.all(
         selectedRooms.map((roomId) => {
-          const res = axios.put(`http://localhost:8800/api/rooms/availability/${roomId}`, {
+          const res = axios.put(`https://api-uqjw.onrender.com/api/rooms/availability/${roomId}`, {
             dates: alldates,
           });
           //navigate(`/book/${selectedRooms}`)

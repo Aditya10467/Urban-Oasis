@@ -23,7 +23,7 @@ const Hotel =()=>{
     const [slideNumber,setSlideNumber]=useState(0);
     const [open,setOpen]=useState(false);
     const [openModal,setOpenModal]=useState(false);
-    const {data,loading,error}=useFetch(`http://localhost:8800/api/hotels/find/${id}`)
+    const {data,loading,error}=useFetch(`https://api-uqjw.onrender.com/api/hotels/find/${id}`)
     const {dates,options}=useContext(SearchContext)
     const MILLISECONDS_PER_DAY=1000*60*60*24;
     function dayDifference(date1,date2){

@@ -26,7 +26,7 @@ const Login=()=>{
         dispatch({type:"LOGIN_START"})
         try{
             console.log(credentials);
-            const res=await axios.post("http://localhost:8800/api/auth/login",credentials)
+            const res=await axios.post("https://api-uqjw.onrender.com/api/auth/login",credentials)
             dispatch({type:"LOGIN_SUCCESS",payload: res.data.details})
             console.log(res);
             navigate("/")

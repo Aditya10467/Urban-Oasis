@@ -147,7 +147,7 @@ function Booking() {
     try {
 
       const res = await axios.put(
-        "http://localhost:8800/api/confirmb/create",
+        "https://api-uqjw.onrender.com/api/confirmb/create",
         bids
 
       );
